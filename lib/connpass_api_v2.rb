@@ -11,4 +11,11 @@ module ConnpassApiV2
 
   autoload :Client,   "connpass_api_v2/client"
   autoload :Response, "connpass_api_v2/response"
+
+  # @param api_key [String]
+  #
+  # @return [ConnpassApiV2::Client]
+  def self.client(api_key)
+    Client.new(api_key)
+  end
 end
