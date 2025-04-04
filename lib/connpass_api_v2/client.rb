@@ -42,5 +42,18 @@ module ConnpassApiV2
 
       param
     end
+
+    # Convert to `yyyymm` formatted string
+    #
+    # @param param [String,Date,nil]
+    #
+    # @return [String,nil]
+    def self.to_ym(param)
+      return nil unless param
+
+      return param.strftime("%Y%m") if param.respond_to?(:strftime)
+
+      param
+    end
   end
 end

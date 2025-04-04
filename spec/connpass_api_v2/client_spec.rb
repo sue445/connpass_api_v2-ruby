@@ -94,4 +94,20 @@ RSpec.describe ConnpassApiV2::Client do
       it { should eq expected }
     end
   end
+
+  describe ".to_ym" do
+    subject { ConnpassApiV2::Client.to_ym(param) }
+
+    using RSpec::Parameterized::TableSyntax
+
+    where(:param, :expected) do
+      nil                  | nil
+      "202504"             | "202504"
+      Date.new(2025, 4, 1) | "202504"
+    end
+
+    with_them do
+      it { should eq expected }
+    end
+  end
 end
