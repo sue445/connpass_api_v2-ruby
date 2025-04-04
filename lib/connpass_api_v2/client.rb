@@ -2,6 +2,11 @@
 
 module ConnpassApiV2
   class Client
+    # @param api_key [String]
+    def initialize(api_key)
+      @api_key = api_key
+    end
+
     # Search events
     #
     # @param event_id [Integer,Array<Integer>,nil]
