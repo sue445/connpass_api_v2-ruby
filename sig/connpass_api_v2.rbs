@@ -4,5 +4,7 @@ module ConnpassApiV2
   class Error < StandardError
   end
 
+  def self.client: (String api_key) -> Client
+
   # See the writing guide of rbs: https://github.com/ruby/rbs#guides
 end
