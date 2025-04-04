@@ -3,6 +3,8 @@
 require_relative "connpass_api_v2/version"
 
 require "hashie/mash"
+require "faraday"
+require "faraday/mashify"
 
 module ConnpassApiV2
   class Error < StandardError; end
