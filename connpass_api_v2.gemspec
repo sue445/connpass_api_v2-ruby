@@ -39,7 +39,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rbs"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "steep"
+  spec.add_development_dependency "webmock"
   spec.add_development_dependency "yard"
 
   # For more information and examples about making a new gem, check out our
