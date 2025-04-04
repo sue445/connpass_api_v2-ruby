@@ -52,12 +52,18 @@ module ConnpassApiV2
       }
 
       if ym
-        values = Array(ym).map { |v| Client.to_ym(v) }
+        values = Array(ym).map do |v|
+          # @type var v: String | Date
+          Client.to_ym(v)
+        end
         params[:ym] = Client.joined_param(values)
       end
 
       if ymd
-        values = Array(ymd).map { |v| Client.to_ymd(v) }
+        values = Array(ymd).map do |v|
+          # @type var v: String | Date
+          Client.to_ymd(v)
+        end
         params[:ymd] = Client.joined_param(values)
       end
 
@@ -81,7 +87,7 @@ module ConnpassApiV2
     def self.to_ymd(param)
       return nil unless param
 
-      return param.strftime("%Y%m%d") if param.respond_to?(:strftime)
+      return param.strftime("%Y%m%d") if param.is_a?(Date)
 
       param
     end
@@ -94,14 +100,14 @@ module ConnpassApiV2
     def self.to_ym(param)
       return nil unless param
 
-      return param.strftime("%Y%m") if param.respond_to?(:strftime)
+      return param.strftime("%Y%m") if param.is_a?(Date)
 
       param
     end
 
     # @param order [Integer,Symbol,nil]
     #
-    # @return [Integer]
+    # @return [Integer,nil]
     def self.to_order_num(order)
       order_to_num = {
         updated_at: 1,
@@ -109,7 +115,7 @@ module ConnpassApiV2
         newest:     3,
       }
 
-      order_to_num[order] || order
+      order_to_num[order] || order # steep:ignore
     end
 
     private
