@@ -110,4 +110,22 @@ RSpec.describe ConnpassApiV2::Client do
       it { should eq expected }
     end
   end
+
+  describe ".to_order_num" do
+    subject { ConnpassApiV2::Client.to_order_num(order) }
+
+    using RSpec::Parameterized::TableSyntax
+
+    where(:order, :expected) do
+      nil         | nil
+      1           | 1
+      :updated_at | 1
+      :started_at | 2
+      :newest     | 3
+    end
+
+    with_them do
+      it { should eq expected }
+    end
+  end
 end

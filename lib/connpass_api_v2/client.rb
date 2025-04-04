@@ -55,5 +55,18 @@ module ConnpassApiV2
 
       param
     end
+
+    # @param order [Integer,Symbol,nil]
+    #
+    # @return [Integer]
+    def self.to_order_num(order)
+      order_to_num = {
+        updated_at: 1,
+        started_at: 2,
+        newest:     3,
+      }
+
+      order_to_num[order] || order
+    end
   end
 end
