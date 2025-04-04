@@ -29,5 +29,18 @@ module ConnpassApiV2
     def get_events(event_id: nil, keyword: nil, keyword_or: nil, ym: nil, ymd: nil, nickname: nil, owner_nickname: nil,
                    group_id: nil, subdomain: nil, prefecture: nil, order: nil, start: nil, count: nil)
     end
+
+    # Convert to `yyyymmdd` formatted string
+    #
+    # @param param [String,Date,nil]
+    #
+    # @return [String,nil]
+    def self.to_ymd(param)
+      return nil unless param
+
+      return param.strftime("%Y%m%d") if param.respond_to?(:strftime)
+
+      param
+    end
   end
 end

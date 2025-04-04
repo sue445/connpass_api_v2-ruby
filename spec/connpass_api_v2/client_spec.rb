@@ -78,4 +78,20 @@ RSpec.describe ConnpassApiV2::Client do
       its("events.count") { should eq 1 }
     end
   end
+
+  describe ".to_ymd" do
+    subject { ConnpassApiV2::Client.to_ymd(param) }
+
+    using RSpec::Parameterized::TableSyntax
+
+    where(:param, :expected) do
+      nil                  | nil
+      "20250401"           | "20250401"
+      Date.new(2025, 4, 1) | "20250401"
+    end
+
+    with_them do
+      it { should eq expected }
+    end
+  end
 end
