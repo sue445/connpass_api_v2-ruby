@@ -52,7 +52,7 @@ RSpec.describe ConnpassApiV2::Client do
         )
       end
 
-      let(:event_id)       { 364 }
+      let(:event_id)       { [364, 123] }
       let(:keyword)        { "Ruby" }
       let(:keyword_or)     { "Go" }
       let(:ym)             { "202504" }
@@ -67,7 +67,7 @@ RSpec.describe ConnpassApiV2::Client do
       let(:count)          { 100 }
 
       before do
-        stub_request(:get, "https://connpass.com/api/v2/events/").
+        stub_request(:get, "https://connpass.com/api/v2/events/?count=100&event_id=364,123&group_id=1&keyword=Ruby&keyword_or=Go&nickname=sue445&order=1&owner_nickname=owner&prefecture=online&start=1&subdomain=bpstudy&ym=202504&ymd=20240401").
           with(headers: request_headers).
           to_return(status: 200, headers: response_headers, body: fixture("get_events.json"))
       end
