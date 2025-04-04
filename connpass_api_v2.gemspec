@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["sue445"]
   spec.email = ["sue445@sue445.net"]
 
-  spec.summary = "Connpass API v2 client for Ruby"
-  spec.description = "Connpass API v2 client for Ruby"
+  spec.summary = "connpass API v2 client for Ruby"
+  spec.description = "connpass API v2 client for Ruby"
   spec.homepage = "https://github.com/sue445/connpass_api_v2-ruby"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
