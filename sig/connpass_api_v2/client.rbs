@@ -1,0 +1,39 @@
+module ConnpassApiV2
+  class Client
+    @api_key: String
+
+    API_ENDPOINT: string
+
+    def initialize: (String api_key) -> void
+
+    def inspect: () -> String
+
+    def get_events: (
+      ?event_id: (Integer | Array[Integer])?,
+      ?keyword: (String | Array[String])?,
+      ?keyword_or: (String | Array[String])?,
+      ?ym: (String | Array[String] | Date | Array[Date])?,
+      ?ymd: (String | Array[String] | Date | Array[Date])?,
+      ?nickname: (String | Array[String])?,
+      ?owner_nickname: (String | Array[String])?,
+      ?group_id: (Integer | Array[Integer])?,
+      ?subdomain: (String | Array[String])?,
+      ?prefecture: (String | Array[String])?,
+      ?order: (Integer | Symbol)?,
+      ?start: Integer?,
+      ?count: Integer?,
+    ) -> Response
+
+    def self.joined_param: (untyped param) -> String?
+
+    def self.to_ymd: ((String | Date)? param) -> String?
+
+    def self.to_ym: ((String | Date)? param) -> String?
+
+    def self.to_order_num: ((Integer | Symbol)? order) -> Integer?
+
+    private
+
+    def connection: () -> Faraday::Connection
+  end
+end

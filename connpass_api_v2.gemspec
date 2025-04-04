@@ -26,20 +26,24 @@ Gem::Specification.new do |spec|
   spec.files = IO.popen(%w[git ls-files -z], chdir: __dir__, err: IO::NULL) do |ls|
     ls.readlines("\x0", chomp: true).reject do |f|
       (f == gemspec) ||
-        f.start_with?(*%w[bin/ test/ spec/ features/ .git .github appveyor Gemfile])
+        f.start_with?(*%w[bin/ test/ spec/ features/ .git .github appveyor Gemfile sig/non-gemify])
     end
   end
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency "faraday", ">= 2.0.0"
+  spec.add_dependency "faraday-mashify"
 
+  spec.add_development_dependency "dotenv"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rbs"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec-its"
+  spec.add_development_dependency "rspec-parameterized"
   spec.add_development_dependency "steep"
+  spec.add_development_dependency "webmock"
   spec.add_development_dependency "yard"
 
   # For more information and examples about making a new gem, check out our

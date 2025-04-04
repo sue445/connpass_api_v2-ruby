@@ -1,0 +1,6 @@
+module Faraday
+  class Response
+    def body: () -> ConnpassApiV2::Response
+      | ...
+  end
+end

@@ -1,8 +1,52 @@
 ---
 path: ".gem_rbs_collection"
 gems:
+- name: addressable
+  version: '2.8'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: ast
+  version: '2.4'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: bigdecimal
+  version: '3.1'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: binding_of_caller
+  version: '1.0'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: date
+  version: '0'
+  source:
+    type: stdlib
 - name: diff-lcs
   version: '1.5'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: faraday
+  version: '2.7'
   source:
     type: git
     name: ruby/gem_rbs_collection
@@ -13,8 +57,80 @@ gems:
   version: '0'
   source:
     type: stdlib
+- name: forwardable
+  version: '0'
+  source:
+    type: stdlib
+- name: hashdiff
+  version: '1.1'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: hashie
+  version: '5.0'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: json
+  version: '0'
+  source:
+    type: stdlib
+- name: logger
+  version: '0'
+  source:
+    type: stdlib
+- name: monitor
+  version: '0'
+  source:
+    type: stdlib
+- name: net-http
+  version: '0'
+  source:
+    type: stdlib
+- name: net-protocol
+  version: '0'
+  source:
+    type: stdlib
+- name: parser
+  version: '3.2'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
 - name: rake
   version: '13.0'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: 61a28f2cc8fe29f87c6d9d7da03615f5f0289c36
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rspec-parameterized-core
+  version: 1.0.1
+  source:
+    type: rubygems
+- name: rspec-parameterized-table_syntax
+  version: 1.0.1
+  source:
+    type: rubygems
+- name: timeout
+  version: '0'
+  source:
+    type: stdlib
+- name: uri
+  version: '0'
+  source:
+    type: stdlib
+- name: webmock
+  version: '3.19'
   source:
     type: git
     name: ruby/gem_rbs_collection

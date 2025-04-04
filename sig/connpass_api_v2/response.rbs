@@ -1,0 +1,4 @@
+module ConnpassApiV2
+  class Response < Hashie::Mash
+  end
+end

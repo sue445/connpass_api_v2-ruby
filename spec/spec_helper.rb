@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 require "connpass_api_v2"
+require "webmock/rspec"
+require "rspec/its"
+require "rspec/parameterized"
+
+Dir["#{__dir__}/support/**/*.rb"].each {|f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -16,4 +21,10 @@ RSpec.configure do |config|
   config.define_derived_metadata do |meta|
     meta[:aggregate_failures] = true
   end
+
+  config.include FixtureUtil
+end
+
+def spec_dir
+  Pathname(__dir__)
 end
