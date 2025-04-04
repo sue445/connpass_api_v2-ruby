@@ -9,6 +9,12 @@ module ConnpassApiV2
       @api_key = api_key
     end
 
+    # @return [String]
+    def inspect
+      # NOTE: hide @api_key
+      %Q(#<ConnpassApiV2::Client:0x#{"%016X" % object_id} @api_key="*****************">)
+    end
+
     # Search events
     #
     # @param event_id [Integer,Array<Integer>,nil]

@@ -17,6 +17,13 @@ RSpec.describe ConnpassApiV2::Client do
 
   let(:response_headers) { { "Content-Type" =>  "application/json" } }
 
+  describe "#inspect" do
+    subject { client.inspect }
+
+    it { should be_start_with "#<ConnpassApiV2::Client:0x" }
+    it { should_not include api_key }
+  end
+
   describe "#get_events" do
     context "without params" do
       subject { client.get_events }
