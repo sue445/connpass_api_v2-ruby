@@ -30,6 +30,15 @@ module ConnpassApiV2
                    group_id: nil, subdomain: nil, prefecture: nil, order: nil, start: nil, count: nil)
     end
 
+    # @param param [Object]
+    #
+    # @return [String,nil]
+    def self.joined_param(param)
+      return nil unless param
+
+      Array(param).join(",")
+    end
+
     # Convert to `yyyymmdd` formatted string
     #
     # @param param [String,Date,nil]

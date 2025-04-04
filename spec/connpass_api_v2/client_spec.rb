@@ -128,4 +128,22 @@ RSpec.describe ConnpassApiV2::Client do
       it { should eq expected }
     end
   end
+
+  describe ".joined_param" do
+    subject { ConnpassApiV2::Client.joined_param(param) }
+
+    using RSpec::Parameterized::TableSyntax
+
+    where(:param, :expected) do
+      nil            | nil
+      1              | "1"
+      [1, 2]         | "1,2"
+      "foo"          | "foo"
+      ["foo", "bar"] | "foo,bar"
+    end
+
+    with_them do
+      it { should eq expected }
+    end
+  end
 end
