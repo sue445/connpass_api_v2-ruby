@@ -9,6 +9,7 @@ require "dotenv"
 # with your gem easier. You can also use a different console, if you like.
 
 Dotenv.load
+
 @client = ConnpassApiV2::Client.new(ENV["CONNPASS_API_KEY"])
 
 require "irb"
