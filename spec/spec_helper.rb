@@ -3,6 +3,7 @@
 require "connpass_api_v2"
 require "webmock/rspec"
 require "rspec/its"
+require "rspec/parameterized"
 
 Dir["#{__dir__}/support/**/*.rb"].each {|f| require f }
 
