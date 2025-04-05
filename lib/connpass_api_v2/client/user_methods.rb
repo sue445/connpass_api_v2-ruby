@@ -15,8 +15,8 @@ module ConnpassApiV2
       def get_users(nickname: nil, start: nil, count: nil)
         params = {
           nickname: Client.joined_param(nickname),
-          start:     start,
-          count:     count,
+          start:    start,
+          count:    count,
         }
 
         connection.get("users/", params.compact).body # steep:ignore NoMethod
