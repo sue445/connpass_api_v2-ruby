@@ -82,5 +82,44 @@ RSpec.describe ConnpassApiV2::Client::UserMethods do
       its(:results_start)     { should eq 1 }
       its("groups.count")     { should eq 1 }
     end
+
+    describe "#get_user_attended_events" do
+      let(:nickname) { "sue445" }
+
+      context "without params" do
+        subject { client.get_user_attended_events(nickname) }
+
+        before do
+          stub_request(:get, "https://connpass.com/api/v2/users/sue445/attended_events/").
+            with(headers: request_headers).
+            to_return(status: 200, headers: response_headers, body: fixture("get_user_attended_events.json"))
+        end
+
+        its(:results_returned)  { should eq 1 }
+        its(:results_available) { should eq 91 }
+        its(:results_start)     { should eq 1 }
+        its("events.count")     { should eq 1 }
+      end
+
+      context "with params" do
+        subject do
+          client.get_user_attended_events(nickname, start: start, count: count)
+        end
+
+        let(:start) { 1 }
+        let(:count) { 100 }
+
+        before do
+          stub_request(:get, "https://connpass.com/api/v2/users/sue445/attended_events/?count=100&start=1").
+            with(headers: request_headers).
+            to_return(status: 200, headers: response_headers, body: fixture("get_user_attended_events.json"))
+        end
+
+        its(:results_returned)  { should eq 1 }
+        its(:results_available) { should eq 91 }
+        its(:results_start)     { should eq 1 }
+        its("events.count")     { should eq 1 }
+      end
+    end
   end
 end
