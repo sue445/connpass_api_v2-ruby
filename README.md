@@ -4,6 +4,9 @@
 [![Gem Version](https://badge.fury.io/rb/connpass_api_v2.svg)](https://badge.fury.io/rb/connpass_api_v2)
 [![test](https://github.com/sue445/connpass_api_v2-ruby/actions/workflows/test.yml/badge.svg)](https://github.com/sue445/connpass_api_v2-ruby/actions/workflows/test.yml)
 
+## Requirements
+* [connpass API key](https://connpass.com/about/api/v2/#section/%E6%A6%82%E8%A6%81/%E8%AA%8D%E8%A8%BC)
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
