@@ -6,6 +6,12 @@ module ConnpassApiV2
         ?start: Integer?,
         ?count: Integer?,
       ) -> Response
+
+      def get_user_groups: (
+        String  nickname,
+        ?start: Integer?,
+        ?count: Integer?,
+      ) -> Response
     end
   end
 end
