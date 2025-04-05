@@ -3,8 +3,10 @@
 module ConnpassApiV2
   class Client
     autoload :EventMethods, "connpass_api_v2/client/event_methods"
+    autoload :GroupMethods, "connpass_api_v2/client/group_methods"
 
     include EventMethods
+    include GroupMethods
 
     API_ENDPOINT = "https://connpass.com/api/v2"
 
