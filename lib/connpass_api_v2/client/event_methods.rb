@@ -54,7 +54,7 @@ module ConnpassApiV2
           params[:ymd] = Client.joined_param(values)
         end
 
-        connection.get("events/", params.compact).body
+        connection.get("events/", params.compact).body # steep:ignore NoMethod
       end
     end
   end
