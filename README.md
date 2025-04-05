@@ -1,6 +1,7 @@
 # ConnpassApiV2
 [connpass API v2](https://connpass.com/about/api/v2/) client for Ruby
 
+[![Gem Version](https://badge.fury.io/rb/connpass_api_v2.svg)](https://badge.fury.io/rb/connpass_api_v2)
 [![test](https://github.com/sue445/connpass_api_v2-ruby/actions/workflows/test.yml/badge.svg)](https://github.com/sue445/connpass_api_v2-ruby/actions/workflows/test.yml)
 
 ## Installation
