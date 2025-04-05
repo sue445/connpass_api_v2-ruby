@@ -1,0 +1,11 @@
+module ConnpassApiV2
+  class Client
+    module UserMethods
+      def get_users: (
+        ?nickname: (String | Array[String])?,
+        ?start: Integer?,
+        ?count: Integer?,
+      ) -> Response
+    end
+  end
+end
