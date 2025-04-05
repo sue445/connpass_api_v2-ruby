@@ -12,6 +12,12 @@ module ConnpassApiV2
         ?start: Integer?,
         ?count: Integer?,
       ) -> Response
+
+      def get_user_attended_events: (
+        String  nickname,
+        ?start: Integer?,
+        ?count: Integer?,
+      ) -> Response
     end
   end
 end
