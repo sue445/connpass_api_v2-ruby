@@ -1,0 +1,11 @@
+module ConnpassApiV2
+  class Client
+    module GroupMethods
+      def get_groups: (
+        ?subdomain: (String | Array[String])?,
+        ?start: Integer?,
+        ?count: Integer?,
+      ) -> Response
+    end
+  end
+end
