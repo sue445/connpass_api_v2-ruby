@@ -123,14 +123,14 @@ module ConnpassApiV2
     # @return [Faraday::Connection]
     def connection
       request_headers = {
-        "User-Agent" => "connpass_api_v2-ruby/v#{ConnpassApiV2::VERSION} (+https://github.com/sue445/connpass_api_v2-ruby)",
+        "User-Agent" => "connpass_api_v2-ruby/v#{VERSION} (+https://github.com/sue445/connpass_api_v2-ruby)",
         "Content-Type" => "application/json",
         "X-Api-Key" => @api_key,
       }
 
       Faraday.new(url: API_ENDPOINT, headers: request_headers) do |conn|
         conn.request :json
-        conn.response :mashify, mash_class: ConnpassApiV2::Response
+        conn.response :mashify, mash_class: Response
         conn.response :json
         conn.response :raise_error
 
