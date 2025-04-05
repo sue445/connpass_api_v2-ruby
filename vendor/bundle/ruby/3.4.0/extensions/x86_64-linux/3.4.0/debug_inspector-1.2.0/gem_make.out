@@ -1,0 +1,18 @@
+current directory: /home/runner/work/connpass_api_v2-ruby/connpass_api_v2-ruby/vendor/bundle/ruby/3.4.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+/opt/hostedtoolcache/Ruby/3.4.2/x64/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/connpass_api_v2-ruby/connpass_api_v2-ruby/vendor/bundle/ruby/3.4.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20250404-1762-q7jdoo sitelibdir\=./.gem.20250404-1762-q7jdoo clean
+
+current directory: /home/runner/work/connpass_api_v2-ruby/connpass_api_v2-ruby/vendor/bundle/ruby/3.4.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20250404-1762-q7jdoo sitelibdir\=./.gem.20250404-1762-q7jdoo
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+current directory: /home/runner/work/connpass_api_v2-ruby/connpass_api_v2-ruby/vendor/bundle/ruby/3.4.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20250404-1762-q7jdoo sitelibdir\=./.gem.20250404-1762-q7jdoo install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20250404-1762-q7jdoo
+
+current directory: /home/runner/work/connpass_api_v2-ruby/connpass_api_v2-ruby/vendor/bundle/ruby/3.4.0/gems/debug_inspector-1.2.0/ext/debug_inspector
+make DESTDIR\= sitearchdir\=./.gem.20250404-1762-q7jdoo sitelibdir\=./.gem.20250404-1762-q7jdoo clean
