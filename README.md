@@ -29,7 +29,7 @@ client = ConnpassApiV2.client(ENV["CONNPASS_API_KEY"])
 
 client.get_events
 
-res = @client.get_events(nickname: "sue445", count: 100)
+res = client.get_events(nickname: "sue445", count: 100)
 
 res.events.count
 #=> 100
