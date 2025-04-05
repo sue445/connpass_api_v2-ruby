@@ -64,4 +64,44 @@ RSpec.describe ConnpassApiV2::Client::EventMethods do
       its("events.count") { should eq 1 }
     end
   end
+
+  describe "#get_event_presentations" do
+    let(:event_id) { 364 }
+
+    context "without params" do
+      subject { client.get_event_presentations(event_id) }
+
+      before do
+        stub_request(:get, "https://connpass.com/api/v2/events/364/presentations/").
+          with(headers: request_headers).
+          to_return(status: 200, headers: response_headers, body: fixture("get_event_presentations.json"))
+      end
+
+      its(:results_returned)     { should eq 1 }
+      its(:results_available)    { should eq 91 }
+      its(:results_start)        { should eq 1 }
+      its("presentations.count") { should eq 1 }
+    end
+
+    context "with params" do
+      subject do
+        client.get_event_presentations(event_id, start: start, count: count)
+      end
+
+      let(:event_id) { 364 }
+      let(:start)    { 1 }
+      let(:count)    { 100 }
+
+      before do
+        stub_request(:get, "https://connpass.com/api/v2/events/364/presentations/?count=100&start=1").
+          with(headers: request_headers).
+          to_return(status: 200, headers: response_headers, body: fixture("get_event_presentations.json"))
+      end
+
+      its(:results_returned)     { should eq 1 }
+      its(:results_available)    { should eq 91 }
+      its(:results_start)        { should eq 1 }
+      its("presentations.count") { should eq 1 }
+    end
+  end
 end

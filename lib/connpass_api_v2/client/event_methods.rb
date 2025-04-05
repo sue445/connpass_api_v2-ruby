@@ -56,6 +56,24 @@ module ConnpassApiV2
 
         connection.get("events/", params.compact).body # steep:ignore NoMethod
       end
+
+      # Get list of presentations submitted to the event
+      #
+      # @param event_id [Integer]
+      # @param start [Integer,nil]
+      # @param count [Integer,nil]
+      #
+      # @return [ConnpassApiV2::Response]
+      #
+      # @see https://connpass.com/about/api/v2/#tag/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/operation/connpass_event_event_api_v2_views_event_presentation
+      def get_event_presentations(event_id, start: nil, count: nil)
+        params = {
+          start: start,
+          count: count,
+        }
+
+        connection.get("events/#{event_id}/presentations/", params.compact).body # steep:ignore NoMethod
+      end
     end
   end
 end

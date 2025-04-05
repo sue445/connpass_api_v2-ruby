@@ -16,6 +16,12 @@ module ConnpassApiV2
         ?start: Integer?,
         ?count: Integer?,
       ) -> Response
+
+      def get_event_presentations: (
+        Integer event_id,
+        ?start: Integer?,
+        ?count: Integer?,
+      ) -> Response
     end
   end
 end
