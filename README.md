@@ -28,6 +28,17 @@ require "connpass_api_v2"
 client = ConnpassApiV2.client(ENV["CONNPASS_API_KEY"])
 
 client.get_events
+
+res = @client.get_events(nickname: "sue445", count: 100)
+
+res.events.count
+#=> 100
+
+res.events[0].title
+#=> "STORES.rb RubyKaigi 2025 直前スペシャル"
+
+res.events[0].url
+#=> "https://hey.connpass.com/event/347445/"
 ```
 
 All methods are followings
