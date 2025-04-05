@@ -36,7 +36,6 @@ module ConnpassApiV2
     # @see https://connpass.com/about/api/v2/#tag/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/operation/connpass_event_event_api_v2_views_event_search
     def get_events(event_id: nil, keyword: nil, keyword_or: nil, ym: nil, ymd: nil, nickname: nil, owner_nickname: nil,
                    group_id: nil, subdomain: nil, prefecture: nil, order: nil, start: nil, count: nil)
-
       params = {
         event_id:       Client.joined_param(event_id),
         keyword:        Client.joined_param(keyword),
