@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module ConnpassApiV2
+  # connpass API client
   class Client
     autoload :EventMethods, "connpass_api_v2/client/event_methods"
     autoload :GroupMethods, "connpass_api_v2/client/group_methods"

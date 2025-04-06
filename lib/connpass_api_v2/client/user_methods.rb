@@ -2,6 +2,7 @@
 
 module ConnpassApiV2
   class Client
+    # connpass user endpoints (`/api/v2/users`)
     module UserMethods
       # Search users
       #

@@ -2,6 +2,7 @@
 
 module ConnpassApiV2
   class Client
+    # connpass group endpoints (`/api/v2/groups`)
     module GroupMethods
       # Search groups
       #

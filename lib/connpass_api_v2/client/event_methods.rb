@@ -2,6 +2,7 @@
 
 module ConnpassApiV2
   class Client
+    # connpass event endpoints (`/api/v2/events`)
     module EventMethods
       # Search events
       #
