@@ -35,7 +35,7 @@ RSpec.describe ConnpassApiV2::Client::EventMethods do
           order:          order,
           start:          start,
           count:          count,
-          )
+        )
       end
 
       let(:event_id)       { [364, 123] }
