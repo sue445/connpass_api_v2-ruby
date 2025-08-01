@@ -6,7 +6,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: ast
@@ -14,7 +14,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: bigdecimal
@@ -22,7 +22,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: binding_of_caller
@@ -30,7 +30,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: date
@@ -42,7 +42,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: faraday
@@ -50,7 +50,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: fileutils
@@ -66,7 +66,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: hashie
@@ -74,7 +74,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: json
@@ -102,7 +102,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: prism
@@ -114,7 +114,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: rspec-parameterized-core
@@ -138,7 +138,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 668aaf4d7e8a1ed7afa8494168e3b8f1d307ae77
+    revision: 2b121e82ceb72668b62221f3de139c2ce16663d6
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 gemfile_lock_path: Gemfile.lock
