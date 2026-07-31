@@ -69,7 +69,7 @@ module ConnpassApiV2
         newest:     3,
       }
 
-      order_to_num[order] || order # steep:ignore
+      order_to_num[order] || order
     end
 
     private
