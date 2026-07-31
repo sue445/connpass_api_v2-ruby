@@ -41,6 +41,10 @@ gems:
     revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
+- name: erb
+  version: '0'
+  source:
+    type: stdlib
 - name: faraday
   version: '2.7'
   source:
@@ -134,6 +138,10 @@ gems:
   source:
     type: stdlib
 - name: timeout
+  version: '0'
+  source:
+    type: stdlib
+- name: tsort
   version: '0'
   source:
     type: stdlib
