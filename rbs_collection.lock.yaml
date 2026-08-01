@@ -6,7 +6,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: ast
@@ -14,7 +14,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: bigdecimal
@@ -26,7 +26,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: date
@@ -38,19 +38,15 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
-- name: erb
-  version: '0'
-  source:
-    type: stdlib
 - name: faraday
   version: '2.7'
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: fileutils
@@ -66,7 +62,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: hashie
@@ -74,7 +70,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: json
@@ -86,7 +82,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: monitor
@@ -106,7 +102,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: prism
@@ -118,7 +114,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 - name: rdoc
@@ -141,10 +137,6 @@ gems:
   version: '0'
   source:
     type: stdlib
-- name: tsort
-  version: '0'
-  source:
-    type: stdlib
 - name: uri
   version: '0'
   source:
@@ -154,7 +146,7 @@ gems:
   source:
     type: git
     name: ruby/gem_rbs_collection
-    revision: 5689759efdc7875d533e8e5b2376b4ab89472e36
+    revision: bc8394e60b1d20e2332104e60b64b283d025be57
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
 gemfile_lock_path: Gemfile.lock
