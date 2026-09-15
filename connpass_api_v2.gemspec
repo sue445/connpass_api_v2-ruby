@@ -47,6 +47,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
   spec.add_development_dependency "yard"
 
+  # FIXME: workaround for https://github.com/sue445/connpass_api_v2-ruby/issues/88
+  spec.add_development_dependency "json", "< 3"
+
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
 end
