@@ -41,6 +41,10 @@ gems:
     revision: 2d0f5aed046c0822b3a0c163967b79fb5116b194
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
+- name: erb
+  version: '0'
+  source:
+    type: stdlib
 - name: faraday
   version: '2.7'
   source:
@@ -109,6 +113,14 @@ gems:
   version: 1.9.0
   source:
     type: rubygems
+- name: racc
+  version: '1.8'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: ca341ff7f4332252d4cf2755e6258bf7ce175594
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
 - name: rake
   version: '13.0'
   source:
@@ -134,6 +146,10 @@ gems:
   source:
     type: stdlib
 - name: timeout
+  version: '0'
+  source:
+    type: stdlib
+- name: tsort
   version: '0'
   source:
     type: stdlib
